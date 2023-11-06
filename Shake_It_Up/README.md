@@ -30,3 +30,4 @@ Flow Diagram
 7. End 
 
 https://github.com/MiaaPanda/pythonProject3/blob/master/Shake_It_Up/FlowDiagram.JPG
+![FlowDiagram.JPG](..%2F..%2F..%2FDesktop%2FFlowDiagram.JPG)
