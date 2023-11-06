@@ -1,5 +1,5 @@
 https://github.com/MiaaPanda/pythonProject3/blob/master/Shake_It_Up/Arhitecture%20Diagram%20.jpg
-
+![Arhitecture Diagram.jpg](..%2F..%2F..%2FDesktop%2FArhitecture%20Diagram.jpg)
 Flow Diagram
 1. Start
 2. Setup Tkinter GUI: Create window, frames, labels, buttons and entry fields.
