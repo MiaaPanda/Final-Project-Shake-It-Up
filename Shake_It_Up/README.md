@@ -1,6 +1,7 @@
-https://github.com/MiaaPanda/pythonProject3/blob/master/Shake_It_Up/Arhitecture%20Diagram%20.jpg
-![Arhitecture Diagram.jpg](..%2F..%2F..%2FDesktop%2FArhitecture%20Diagram.jpg)
-Flow Diagram
+[!Architecture Diagram](https://github.com/MiaaPanda/pythonProject3/blob/master/Shake_It_Up/Architecture_Diagram.PNG)
+
+![Architecture_Diagram](C:\Users\Tetragammon\PycharmProjects\pythonProject3\Shake_It_Up\Architecture_Diagram.PNG)
+
 1. Start
 2. Setup Tkinter GUI: Create window, frames, labels, buttons and entry fields.
 3. Input Ingredients: User inputs ingredients into the entry fields.
@@ -24,10 +25,9 @@ Flow Diagram
             * Print "Fetching details for cocktail ID: {cocktail_id}
             * Construct the API URL with the cocktail ID
             * Send API request to get details of the selected cocktail
-            * Receive API responde and decode JSON data.
+            * Receive API response and decode JSON data.
             * Return the details of the cocktail.
          - Display the cocktail details (ingredients, instructions, image) in the respective fields.
 7. End 
 
-https://github.com/MiaaPanda/pythonProject3/blob/master/Shake_It_Up/FlowDiagram.JPG
-![FlowDiagram.JPG](..%2F..%2F..%2FDesktop%2FFlowDiagram.JPG)
+![Flow Diagram](C:\Users\Tetragammon\PycharmProjects\pythonProject3\Shake_It_Up\FlowDiagram.png)
