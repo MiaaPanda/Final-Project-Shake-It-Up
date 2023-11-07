@@ -1,4 +1,3 @@
-[!Architecture Diagram](https://github.com/MiaaPanda/pythonProject3/blob/master/Shake_It_Up/Architecture_Diagram.PNG)
 
 ![Architecture_Diagram](C:\Users\Tetragammon\PycharmProjects\pythonProject3\Shake_It_Up\Architecture_Diagram.PNG)
 
