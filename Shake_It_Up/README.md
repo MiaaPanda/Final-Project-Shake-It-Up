@@ -1,32 +1,33 @@
 
 ![Architecture_Diagram](C:\Users\Tetragammon\PycharmProjects\pythonProject3\Shake_It_Up\Architecture_Diagram.PNG)
 
-1. Start
-2. Setup Tkinter GUI: Create window, frames, labels, buttons and entry fields.
-3. Input Ingredients: User inputs ingredients into the entry fields.
-4. Search Cocktails: On clicking the "Search Cocktails" button, the search_cocktail function is called.
-        - print "Searching cocktails"
-        - Get the ingredient from the entry field
-        - Call search_cocktails_by_ingredient function for each ingredient:
-            * Print "Searching Cocktails with ingredient: {ingredient}"
-            * Construct the API URL with the ingredient
-            * Send API request to get cocktails with the given ingredient.
-            * Receive API response and decode the JSON data.
-            * If "drinks" are present in the data, return the list of drinks.
-            * If an error occurs during JSON decoding, print an error message and return an empty list.
-        - Display the list of cocktails in the result text box or display "No cocktails found" if the list ist empty.
-5. Select Cocktail: User selects a cocktail from the list.
-6. Display Cocktail Details: On clicking the "Display Details" button, the display_cocktail_details function is called:
-         - Print "Displaying cocktail details".
-         - Get the selected cocktail name from the list box.
-         - Find the ID of the selected cocktail.
-         - Call search_cocktail_details function with the ID of the selected cocktail:
-            * Print "Fetching details for cocktail ID: {cocktail_id}
-            * Construct the API URL with the cocktail ID
-            * Send API request to get details of the selected cocktail
-            * Receive API response and decode JSON data.
-            * Return the details of the cocktail.
-         - Display the cocktail details (ingredients, instructions, image) in the respective fields.
-7. End 
+Architecture Diagram:
+The program has two main classes:
+1.	CocktailAPI Class: This class handles interactions with the CocktailDB API. It has methods to search for cocktails by ingredient and fetch detailed information about a specific cocktail.
+2.	CocktailApp Class: This class is responsible for the GUI and overall application flow. It initializes the CocktailAPI, sets up the GUI using Tkinter, and defines methods to search for cocktails and display their details.
+   	Attributes:
+   •	api: An instance of the CocktailAPI class.
+   •	all_cocktails: A list to store information about all the fetched cocktails.
+   	Methods:
+   •	setup_gui: Sets up the Tkinter GUI with labels, entry fields, buttons, and text areas.
+   •	search_cocktails: Handles the logic for searching and displaying cocktails based on user input.
+   •	display_cocktail_details: Fetches and displays detailed information about a selected cocktail.
+3.	Main Execution:
+   •	The program starts by creating an instance of the CocktailApp class.
+   •	It then calls the run method to start the Tkinter main loop, allowing the GUI to run.
+4.	External Libraries:
+   •	The program uses the requests, json, tkinter, PIL, and io modules for API requests, JSON decoding, GUI development, image handling, and file I/O, respectively.
+
 
 ![Flow Diagram](C:\Users\Tetragammon\PycharmProjects\pythonProject3\Shake_It_Up\FlowDiagram.png)
+
+Flow Diagram:
+1.	Start: The program starts when you execute it.
+2.	User Input: The user enters ingredient names in the GUI.
+3.	Search Cocktails Button Pressed: When the user clicks the "Search Cocktails" button, it triggers the search_cocktails method.
+4.	API Interaction: The search_cocktails method interacts with the CocktailAPI class to search for cocktails based on the entered ingredients.
+5.	Display Results: The results are displayed in the GUI in the result_text Listbox.
+6.	Display Details Button Pressed: If the user clicks the "Display Details" button, it triggers the display_cocktail_details method.
+7.	Fetch Cocktail Details: The display_cocktail_details method fetches detailed information about the selected cocktail using the CocktailAPI.
+8.	Display Details: The detailed information is displayed in the GUI in the ingredients_text, instructions_text, and image_label.
+9.	End: The program ends when the user closes the GUI.
