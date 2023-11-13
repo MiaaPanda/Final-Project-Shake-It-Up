@@ -2,6 +2,7 @@
 ![Architecture_Diagram](C:\Users\Tetragammon\PycharmProjects\pythonProject3\Shake_It_Up\Architecture_Diagram.PNG)
 
 Architecture Diagram:
+
 The program has two main classes:
 1.	CocktailAPI Class: This class handles interactions with the CocktailDB API. It has methods to search for cocktails by ingredient and fetch detailed information about a specific cocktail.
 2.	CocktailApp Class: This class is responsible for the GUI and overall application flow. It initializes the CocktailAPI, sets up the GUI using Tkinter, and defines methods to search for cocktails and display their details.
@@ -22,6 +23,7 @@ The program has two main classes:
 ![Flow Diagram](C:\Users\Tetragammon\PycharmProjects\pythonProject3\Shake_It_Up\FlowDiagram.png)
 
 Flow Diagram:
+
 1.	Start: The program starts when you execute it.
 2.	User Input: The user enters ingredient names in the GUI.
 3.	Search Cocktails Button Pressed: When the user clicks the "Search Cocktails" button, it triggers the search_cocktails method.
