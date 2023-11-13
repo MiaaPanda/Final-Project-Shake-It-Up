@@ -112,7 +112,7 @@ class CocktailApp:
     def setup_gui(self):
         self.window = tk.Tk()
         self.window.title("Cocktail Search")
-        self.window.iconbitmap('cocktail.ico')
+        self.window.iconbitmap('src/cocktail.ico')
         self.window.configure(bg='light blue')
 
         self.search_frame = tk.Frame(self.window)
@@ -134,7 +134,7 @@ class CocktailApp:
         self.result_text = tk.Listbox(self.window, width=40, height=10)
         self.result_text.grid(row=1, column=0, padx=10, pady=10)
 
-        self.img = Image.open('button.ico')
+        self.img = Image.open('src/button.ico')
         self.img = self.img.resize((50, 50), Image.LANCZOS)
 
         self.photo = ImageTk.PhotoImage(self.img)
